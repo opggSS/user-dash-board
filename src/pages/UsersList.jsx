@@ -36,7 +36,7 @@ export default function UsersList() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://jsonplaceholder.typicode.com/users')
+      const response = await axios.get('https://jsonplaceholder.typicode.com/users')
       setUsers(response.data)
       setUserSearchResult(response.data)
     } catch (err) {

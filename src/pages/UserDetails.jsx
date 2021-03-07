@@ -14,7 +14,7 @@ export default function UserDetails({ match }) {
 
   const fetchUser = async () => {
     try {
-      const response = await axios.get(`http://jsonplaceholder.typicode.com/users/${id}`)
+      const response = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
       setUserInfo(response.data)
     } catch (err) {
       console.log('error', err)
@@ -23,7 +23,7 @@ export default function UserDetails({ match }) {
 
   const fetchUserPosts = async () => {
     try {
-      const response = await axios.get(`http://jsonplaceholder.typicode.com/posts?userId=${id}`)
+      const response = await axios.get(`https://jsonplaceholder.typicode.com/posts?userId=${id}`)
       setUserPosts(response.data)
     } catch (err) {
       console.log('error', err)
